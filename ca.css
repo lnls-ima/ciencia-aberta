@@ -1,0 +1,393 @@
+/* Configurações gerais */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Delius", "Helvetica", sans-serif;
+}
+
+@font-face {
+  font-family: "Delius";
+  src: url(fonts/Delius-Regular.ttf) format('truetype');
+}
+
+.logo {
+  background: url("img/logo.png") no-repeat center center;
+  background-size: contain;
+  height: 128px;
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+.title {
+  background-color: white;
+  display: inline-block;
+  padding: 10px 20px 10px 20px;
+  border-radius: 40px;
+  position: relative;
+  color: #4D4D4D;
+  top: 60px;
+  font-size:40px;
+}
+
+img {
+  margin: 10px;
+}
+
+video {
+  margin: 10px;
+}
+
+.blackshadow {
+  box-shadow: 5px 0px 5px 0px rgba(0, 0, 50, 0.95);
+}
+
+.whiteshadow {
+  box-shadow: 2px 2px 2px 2px rgba(255, 255, 255, 0.2)
+}
+
+.centralizedimg {
+  display: block;
+  margin: 10px auto;
+}
+
+/* Configuração página inicial*/
+
+.boxtitle {
+  border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+  color: black;
+  margin: 10px;
+  font-size:24px;
+}
+
+.boxtext{
+  margin: 10px;
+  color: black;
+  font-size:20px;
+}
+
+.grid {
+  display: inline-grid;
+  grid-template-rows: 1fr 1% 1fr;
+  grid-template-columns: repeat(4, 1fr);
+  align-items: start;
+  align-content: start;
+  width: 97%;
+  grid-column-gap: 25px;
+  grid-row-gap: 0;
+  margin-left: 25px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+.gridbox {
+  box-shadow: 5px 0px 5px 0px rgba(0, 0, 50, 0.95);
+  text-decoration: none;
+  transition: 0.3s;
+  min-height: 380px;
+}
+
+.gridbox:hover{
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+#arrow {
+  grid-column-start: 1;
+  grid-column-end: 5;
+  min-height: 0;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin: 0 auto;
+}
+
+#gb1 {
+  background-color: hsla(15, 3%, 53%, 0.5);
+  margin-top: 0;
+  -webkit-animation: glowing 1500ms infinite;
+  -moz-animation: glowing 1500ms infinite;
+  -o-animation: glowing 1500ms infinite;
+  animation: glowing 1500ms infinite;
+}
+
+.starttext {
+  text-align: center;
+  position: relative;
+  top: 150px;
+  margin: 10px;
+  color: hsl(226, 100%, 50%);
+  font-weight: bold;
+  font-size:20px;
+}
+
+@-webkit-keyframes glowing {
+  0% {-webkit-box-shadow: 0 0 15px hsla(15, 3%, 3%, 0.7); }
+  50% {-webkit-box-shadow: 0 0 0 hsla(15, 3%, 53%, 0.5); }
+  100% {-webkit-box-shadow: 0 0 15px hsla(15, 3%, 3%, 0.7); }
+}
+
+@-moz-keyframes glowing {
+  0% {-webkit-box-shadow: 0 0 15px hsla(15, 3%, 3%, 0.7); }
+  50% {-webkit-box-shadow: 0 0 0 hsla(15, 3%, 53%, 0.5); }
+  100% {-webkit-box-shadow: 0 0 15px hsla(15, 3%, 3%, 0.7); }
+}
+
+@-o-keyframes glowing {
+  0% {-webkit-box-shadow: 0 0 15px hsla(15, 3%, 3%, 0.7); }
+  50% {-webkit-box-shadow: 0 0 0 hsla(15, 3%, 53%, 0.5); }
+  100% {-webkit-box-shadow: 0 0 15px hsla(15, 3%, 3%, 0.7); }
+}
+
+@keyframes glowing {
+  0% {-webkit-box-shadow: 0 0 15px hsla(15, 3%, 3%, 0.7); }
+  50% {-webkit-box-shadow: 0 0 0 hsla(15, 3%, 53%, 0.5); }
+  100% {-webkit-box-shadow: 0 0 15px hsla(15, 3%, 3%, 0.7); }
+}
+
+#gb2 {
+  background-color: hsla(258, 33%, 47%, 0.5);
+  margin-top: 10px;
+}
+
+#gb3 {
+  background-color: hsla(201, 100%, 36%, 0.5);
+  margin-top: 20px;
+}
+
+#gb4 {
+  background-color: hsla(188, 62%, 58%, 0.5);
+  margin-top: 30px;
+}
+
+#gb5 {
+  background-color: hsla(117, 32%, 40%, 0.5);
+  margin-top: 0px;
+}
+
+#gb6 {
+  background-color: hsla(57, 100%, 45%, 0.5);
+  margin-top: 10px;
+}
+
+#gb7 {
+  background-color: hsla(32, 92%, 54%, 0.5);
+  margin-top: 20px;
+}
+
+#gb8 {
+  background-color: hsla(358, 85%, 52%, 0.5);
+  margin-top: 30px;
+}
+
+/* Configuração barra de navegação*/
+
+.homebtn {
+  position: absolute;
+  bottom: 5px;
+  right: 10px;
+}
+
+.navigationbar a {
+  position: absolute;
+  bottom: 0px;
+  transition: 0.3s;
+  padding: 15px;
+  width: 12%;
+  height: 80px;
+  text-decoration: none;
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  border-radius: 5px 5px 0 0;
+}
+
+.navigationbar a:hover {
+  height: 100px;
+}
+
+.navigationbar a.active {
+  height: 100px;
+  box-shadow: 3px -3px 5px 0px rgba(0, 0, 50, 0.95);
+}
+
+#nb1 {
+  left: 0%;
+  background-color: hsl(15, 3%, 53%);
+}
+
+#nb2 {
+  left: 12%;
+  background-color: hsl(258, 33%, 47%);
+}
+
+#nb3 {
+  left: 24%;
+  background-color: hsl(201, 100%, 36%);
+}
+
+#nb4 {
+  left: 36%;
+  background-color: hsl(188, 62%, 58%);
+}
+
+#nb5 {
+  left: 48%;
+  background-color: hsl(117, 32%, 40%);
+}
+
+#nb6 {
+  width: 11%;
+  left: 60%;
+  background-color: hsl(57, 100%, 45%);
+}
+
+#nb7 {
+  width: 13%;
+  left: 71%;
+  background-color: hsl(32, 92%, 54%);
+}
+
+#nb8 {
+  left: 84%;
+  width: 11%;
+  background-color: hsl(358, 85%, 52%);
+}
+
+/* Configurações Gerais Páginas*/
+
+.pagetitle {
+  padding: 10px;
+  border-radius: 9px;
+  color: #4D4D4D;
+  font-size:24px;
+  margin-right: 0%;
+  margin-left: 0%;
+  text-align: center;
+}
+
+.pagetext {
+  margin: 10px;
+  font-size: 20px;
+  font-weight: normal;
+}
+
+.pageitems {
+  margin: 10px;
+  padding-left: 40px;
+  font-size: 20px;
+  font-weight: normal;
+}
+
+.pagetextcolumn {
+  border: 2px solid lightgrey;
+  border-radius: 10px;
+  padding: 0px;
+  margin: 10px;
+}
+
+.pagegrid2col {
+  display: inline-grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 1fr;
+  width: 97%;
+  grid-column-gap: 1%;
+  grid-row-gap: 0;
+  margin: 0 0 0 1.5%;
+}
+
+.pagegrid3col {
+  display: inline-grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 97%;
+  grid-column-gap: 0.75%;
+  grid-row-gap: 0;
+  margin: 0 0 0 1.5%;
+}
+
+/* Configuração Page 1*/
+
+.page1title {
+  background-color: hsla(15, 3%, 53%, 0.5);
+}
+
+/* Configuração Page 2*/
+
+.page2title {
+  background-color: hsla(258, 33%, 47%, 0.5);
+}
+
+#sim2Dfig1 {
+  margin-top: -10%;
+}
+
+#sim2Dtext1 {
+  margin-left: 57%;
+  margin-top: 10%;
+}
+
+#sim2Dtext2 {
+  margin-top: 20%;
+  margin-right: 47%;
+}
+
+#sim3Dfig1 {
+  margin-top: 0%;
+}
+
+#sim3Dtext1 {
+  margin-left: 57%;
+  margin-top: 25%;
+}
+
+#sim3Dtext2 {
+  margin-top: 20%;
+  margin-right: 55%;
+}
+
+#sim3Dtitle {
+  margin-top: 20%;
+}
+
+/* Configuração Page 3*/
+
+.page3title {
+  background-color: hsla(201, 100%, 36%, 0.5);
+}
+
+/* Configuração Page 4*/
+
+.page4title {
+  background-color: hsla(188, 62%, 58%, 0.5);
+}
+
+#wegtesttitle {
+  margin-top: 8%;
+}
+
+/* Configuração Page 5*/
+
+.page5title {
+  background-color: hsla(117, 32%, 40%, 0.5);
+}
+
+/* Configuração Page 6*/
+
+.page6title {
+  background-color: hsla(57, 100%, 45%, 0.5);
+}
+
+/* Configuração Page 7*/
+
+.page7title {
+  background-color: hsla(32, 92%, 54%, 0.5);
+}
+
+/* Configuração Page 8*/
+
+.page8title {
+  background-color: hsla(358, 85%, 52%, 0.5);
+}

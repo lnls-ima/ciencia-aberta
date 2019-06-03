@@ -1,0 +1,2 @@
+ffmpeg -i bobina_girante.wmv -c:v libx264 -crf 23 -c:a libfaac -q:a 100 bobina_girante.mp4
+
