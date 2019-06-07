@@ -115,7 +115,7 @@ video {
 .starttext {
   text-align: center;
   position: relative;
-  top: 150px;
+  top: 40px;
   margin: 10px;
   color: hsl(226, 100%, 50%);
   font-weight: bold;
