@@ -115,7 +115,7 @@ video {
 .starttext {
   text-align: center;
   position: relative;
-  top: 40px;
+  top: 10px;
   margin: 10px;
   color: hsl(226, 100%, 50%);
   font-weight: bold;
@@ -262,7 +262,7 @@ video {
   padding: 10px;
   border-radius: 9px;
   color: #4D4D4D;
-  font-size:24px;
+  font-size:30px;
   margin-right: 0%;
   margin-left: 0%;
   text-align: center;
@@ -270,14 +270,16 @@ video {
 
 .pagetext {
   margin: 10px;
-  font-size: 20px;
+  font-size: 24px;
   font-weight: normal;
+  text-align: justify;
+  padding: 0px 10px 00px 10px;
 }
 
 .pageitems {
   margin: 10px;
-  padding-left: 40px;
-  font-size: 20px;
+  padding: 10px 10px 40px 10px;
+  font-size: 24px;
   font-weight: normal;
 }
 
@@ -339,8 +341,8 @@ video {
 }
 
 #sim3Dtext1 {
-  margin-left: 57%;
-  margin-top: 25%;
+  margin-left: 47%;
+  margin-top: 5%;
 }
 
 #sim3Dtext2 {
@@ -349,7 +351,7 @@ video {
 }
 
 #sim3Dtitle {
-  margin-top: 20%;
+  margin-top: 10%;
 }
 
 /* Configuração Page 3*/
