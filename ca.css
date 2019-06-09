@@ -310,10 +310,17 @@ video {
   margin: 0 0 0 1.5%;
 }
 
-.legend {
+.legendright {
   font-size: 20px;
   font-weight: normal;
   text-align: right;
+  padding-right: 20px;
+}
+
+.legendcenter {
+  font-size: 20px;
+  font-weight: normal;
+  text-align: center;
 }
 
 /* Configuração Page 1*/
@@ -340,10 +347,6 @@ video {
 #sim2Dtext2 {
   margin-top: 20%;
   margin-right: 47%;
-}
-
-#sim3Dfig1 {
-  margin-top: 0%;
 }
 
 #sim3Dtext1 {
@@ -381,26 +384,14 @@ video {
   padding: 0px 10px 0px 20px;
 }
 
-#legendweg1 {
-  padding-right: 20px;
-}
-
-#legendweg2 {
-  text-align: center;
-}
-
-#legendweg3 {
-  text-align: center;
-}
-
-#legendweg4 {
-  text-align: center;
-}
-
 /* Configuração Page 5*/
 
 .page5title {
   background-color: hsla(117, 32%, 40%, 0.5);
+}
+
+#medicaotitle {
+  margin-top: 2%;
 }
 
 /* Configuração Page 6*/
@@ -419,4 +410,16 @@ video {
 
 .page8title {
   background-color: hsla(358, 85%, 52%, 0.5);
+}
+
+#insttext {
+  text-align: left;
+}
+
+#obrigadotext {
+  margin: 10px;
+  font-size: 30px;
+  font-weight: bold;
+  color: darkred;
+  text-align: center;
 }
