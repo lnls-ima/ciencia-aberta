@@ -415,6 +415,19 @@ video {
   background-color: hsla(57, 100%, 45%, 0.5);
 }
 
+#producaocol {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+#fotoproducao {
+  margin-top: -3%;
+  padding: 0 0 0 0;
+  margin-left: 0;
+  margin-right: 0;
+  margin-bottom: -1%;
+}
+
 /* Configuração Page 7*/
 
 .page7title {
